@@ -1,0 +1,59 @@
+
+---
+
+## 📑 Features & Capabilities
+
+### ✅ **Security**
+- Zero-trust segmentation  
+- NAS cannot access any private IP space  
+- IoT isolated from internal devices  
+- Admin access restricted to VLAN10  
+- Detailed firewall rules and validation  
+
+### ✅ **Networking**
+- Full multi-VLAN routing  
+- Layer-2 Cisco switch trunk/access config  
+- Proper DHCP pools per VLAN  
+- NAT and masquerade on MikroTik  
+
+### ✅ **Operations**
+- Documentation in DoD-style format  
+- Threat model (STRIDE)  
+- NIST 800-53 control mapping  
+- Monitoring add-ons (Prometheus, Grafana)  
+- Future WireGuard VPN integration  
+
+---
+
+## 📁 Repository Structure
+
+```text
+homelab-segmented-network/
+│
+├─ README.md                    # Main documentation
+│
+├─ docs/
+│   ├─ architecture.pdf         # Full professional report
+│   ├─ threat-model.pdf
+│   ├─ compliance-matrix.pdf
+│   ├─ validation.md
+│   ├─ hardening.md
+│   ├─ diagrams/
+│   │   ├─ logical.png
+│   │   └─ physical.png
+│   └─ configs/
+│       ├─ mikrotik.txt
+│       ├─ cisco2950.txt
+│       ├─ tplink-sg108e.txt
+│       └─ eero-notes.md
+│
+└─ scripts/
+    ├─ wireguard/
+    │   └─ wg0.conf.example
+    │
+    ├─ monitoring/
+    │   ├─ prometheus.yml
+    │   └─ grafana-dashboard.json
+    │
+    └─ syslog/
+        └─ rsyslog.conf.example
